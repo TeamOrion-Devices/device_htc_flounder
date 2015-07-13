@@ -28,3 +28,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/lte_only_overlay
+
+# Add APN's and SPN's for flounder LTE
+PRODUCT_COPY_FILES += \
+    vendor/tipsy/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml \
+    vendor/tipsy/prebuilt/common/etc/spn-conf.xml:system/etc/spn-conf.xml \
+    vendor/tipsy/prebuilt/common/etc/spn-conf.xml:system/etc/apns-conf-cdma.xml \
+    vendor/tipsy/prebuilt/common/etc/selective-spn-conf.xml:system/etc/selective-spn-conf.xml
