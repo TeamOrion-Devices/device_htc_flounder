@@ -3,7 +3,7 @@
    "remote":      "github",
    "repository":  "Validus-Kernel/kernel_htc_flounder",
    "target_path": "kernel/htc/flounder",
-   "branch":      "validus"
+   "branch":      "lp5.1"
  },
  {
    "remote":      "github",
