@@ -4,11 +4,11 @@
 TARGET_SCREEN_HEIGHT := 2048
 TARGET_SCREEN_WIDTH := 1536
 
-# Inherit some common Tipsy stuff.
-$(call inherit-product, vendor/tipsy/config/common_full_tablet_wifionly.mk)
+# Inherit some common Orion stuff.
+$(call inherit-product, vendor/orion/config/common_full_tablet_wifionly.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/tipsy/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/orion/config/nfc_enhanced.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/htc/flounder/aosp_flounder.mk)
@@ -36,7 +36,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="flounder-user 5.1.1 LMY47X 1849464 release-keys"
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := tipsy_flounder
+PRODUCT_NAME := orion_flounder
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 9
 PRODUCT_MANUFACTURER := htc
